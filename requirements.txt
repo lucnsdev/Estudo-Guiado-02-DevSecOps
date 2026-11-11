@@ -1,0 +1,6 @@
+Flask
+flake8
+werkzeug
+pytest-flask
+bandit
+pip-audit

@@ -1,0 +1,1439 @@
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_pick.py:13:4
+12          """
+13          assert values, "1 or more values required"
+14          for value in values:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_ratio.py:123:4
+122         total_ratio = sum(ratios)
+123         assert total_ratio > 0, "Sum of ratios must be > 0"
+124
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_unicode_data\__init__.py:92:8
+91          if TYPE_CHECKING:
+92              assert isinstance(module.cell_table, CellTable)
+93          return module.cell_table
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_win32_console.py:435:8
+434
+435             assert fore is not None
+436             assert back is not None
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_win32_console.py:436:8
+435             assert fore is not None
+436             assert back is not None
+437
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\_win32_console.py:565:8
+564             """
+565             assert len(title) < 255, "Console title must be less than 255 characters"
+566             SetConsoleTitle(title)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:365:12
+364             if self.type == ColorType.TRUECOLOR:
+365                 assert self.triplet is not None
+366                 return self.triplet
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:368:12
+367             elif self.type == ColorType.EIGHT_BIT:
+368                 assert self.number is not None
+369                 return EIGHT_BIT_PALETTE[self.number]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:371:12
+370             elif self.type == ColorType.STANDARD:
+371                 assert self.number is not None
+372                 return theme.ansi_colors[self.number]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:374:12
+373             elif self.type == ColorType.WINDOWS:
+374                 assert self.number is not None
+375                 return WINDOWS_PALETTE[self.number]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:377:12
+376             else:  # self.type == ColorType.DEFAULT:
+377                 assert self.number is None
+378                 return theme.foreground_color if foreground else theme.background_color
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:493:12
+492                 number = self.number
+493                 assert number is not None
+494                 fore, back = (30, 40) if number < 8 else (82, 92)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:499:12
+498                 number = self.number
+499                 assert number is not None
+500                 fore, back = (30, 40) if number < 8 else (82, 92)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:504:12
+503             elif _type == ColorType.EIGHT_BIT:
+504                 assert self.number is not None
+505                 return ("38" if foreground else "48", "5", str(self.number))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:508:12
+507             else:  # self.standard == ColorStandard.TRUECOLOR:
+508                 assert self.triplet is not None
+509                 red, green, blue = self.triplet
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:520:12
+519             if system == ColorSystem.EIGHT_BIT and self.system == ColorSystem.TRUECOLOR:
+520                 assert self.triplet is not None
+521                 _h, l, s = rgb_to_hls(*self.triplet.normalized)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:546:16
+545                 if self.system == ColorSystem.TRUECOLOR:
+546                     assert self.triplet is not None
+547                     triplet = self.triplet
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:549:16
+548                 else:  # self.system == ColorSystem.EIGHT_BIT
+549                     assert self.number is not None
+550                     triplet = ColorTriplet(*EIGHT_BIT_PALETTE[self.number])
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:557:16
+556                 if self.system == ColorSystem.TRUECOLOR:
+557                     assert self.triplet is not None
+558                     triplet = self.triplet
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:560:16
+559                 else:  # self.system == ColorSystem.EIGHT_BIT
+560                     assert self.number is not None
+561                     if self.number < 16:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\color.py:573:4
+572         """Parse six hex characters in to RGB triplet."""
+573         assert len(hex_color) == 6, "must be 6 characters"
+574         color = ColorTriplet(
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\console.py:1143:8
+1142
+1143            assert count >= 0, "count must be >= 0"
+1144            self.print(NewLine(count))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\console.py:1939:12
+1938                    offset -= 1
+1939                assert frame is not None
+1940                return frame.f_code.co_filename, frame.f_lineno, frame.f_locals
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\console.py:2204:8
+2203            """
+2204            assert (
+2205                self.record
+2206            ), "To export console contents set record=True in the constructor or instance"
+2207
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\console.py:2268:8
+2267
+2268            assert (
+2269                self.record
+2270            ), "To export console contents set record=True in the constructor or instance"
+2271            fragments: List[str] = []
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\live.py:71:8
+70          ) -> None:
+71              assert refresh_per_second > 0, "refresh_per_second must be > 0"
+72              self._renderable = renderable
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\rich\live.py:381:19
+380                     time.sleep(0.4)
+381                     if random.randint(0, 10) < 1:
+382                         console.log(next(examples))
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\rich\live.py:384:21
+383                     exchange_rate_dict[(select_exchange, exchange)] = 200 / (
+384                         (random.random() * 320) + 1
+385                     )
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\logging.py:148:12
+147                 exc_type, exc_value, exc_traceback = record.exc_info
+148                 assert exc_type is not None
+149                 assert exc_value is not None
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\logging.py:149:12
+148                 assert exc_type is not None
+149                 assert exc_value is not None
+150                 from .traceback import Traceback
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:279:8
+278         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:
+279             assert isinstance(child, TableRowElement)
+280             self.row = child
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:291:8
+290         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:
+291             assert isinstance(child, TableRowElement)
+292             self.rows.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:303:8
+302         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:
+303             assert isinstance(child, TableDataElement)
+304             self.cells.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:326:8
+325
+326             assert justify in get_args(JustifyMethod)
+327             return cls(justify=justify)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:353:8
+352         def on_child_close(self, context: MarkdownContext, child: MarkdownElement) -> bool:
+353             assert isinstance(child, ListItem)
+354             self.items.append(child)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\markdown.py:632:20
+631                         element = context.stack.pop()
+632                         assert isinstance(element, Link)
+633                         link_style = console.get_style("markdown.link", default="none")
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:198:4
+197         console = console or get_console()
+198         assert console is not None
+199
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:203:12
+202             if value is not None:
+203                 assert console is not None
+204                 builtins._ = None  # type: ignore[attr-defined]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:516:8
+515             )
+516             assert self.node is not None
+517             return self.node.check_length(start_length, max_length)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:522:8
+521             node = self.node
+522             assert node is not None
+523             whitespace = self.whitespace
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:524:8
+523             whitespace = self.whitespace
+524             assert node.children
+525             if node.key_repr:
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\rich\pretty.py:661:12
+660                         rich_repr_result = obj.__rich_repr__()
+661                 except Exception:
+662                     pass
+663
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\progress.py:1091:8
+1090        ) -> None:
+1091            assert refresh_per_second > 0, "refresh_per_second must be > 0"
+1092            self._lock = RLock()
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\rich\progress.py:1715:15
+1714                time.sleep(0.01)
+1715                if random.randint(0, 100) < 1:
+1716                    progress.log(next(examples))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\prompt.py:222:8
+221             """
+222             assert self.choices is not None
+223             if self.case_sensitive:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\segment.py:168:8
+167             text, style, control = self
+168             assert cut >= 0
+169
+
+--------------------------------------------------
+>> Issue: [B403:blacklist] Consider possible security implications associated with dumps module.
+   Severity: Low   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b403-import-pickle
+   Location: .\venv\Lib\site-packages\rich\style.py:5:0
+4       from operator import attrgetter
+5       from pickle import dumps, loads
+6       from random import getrandbits
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\rich\style.py:22:22
+21
+22      _id_generator = count(getrandbits(24))
+23
+
+--------------------------------------------------
+>> Issue: [B301:blacklist] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b301-pickle
+   Location: .\venv\Lib\site-packages\rich\style.py:475:66
+474             """Get meta information (can not be changed after construction)."""
+475             return {} if self._meta is None else cast(Dict[str, Any], loads(self._meta))
+476
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\syntax.py:510:20
+509                         """Split tokens to one per line."""
+510                         assert lexer  # required to make MyPy happy - we know lexer is not None at this point
+511
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\text.py:907:8
+906             """
+907             assert len(character) == 1, "Character must be a string of length 1"
+908             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\text.py:924:8
+923             """
+924             assert len(character) == 1, "Character must be a string of length 1"
+925             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\text.py:940:8
+939             """
+940             assert len(character) == 1, "Character must be a string of length 1"
+941             if count:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\text.py:1079:8
+1078            """
+1079            assert separator, "separator must not be empty"
+1080
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\traceback.py:342:16
+341                 if not isinstance(suppress_entity, str):
+342                     assert (
+343                         suppress_entity.__file__ is not None
+344                     ), f"{suppress_entity!r} must be a module with '__file__' attribute"
+345                     path = os.path.dirname(suppress_entity.__file__)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\rich\traceback.py:798:16
+797                 if excluded:
+798                     assert exclude_frames is not None
+799                     yield Text(
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sorteddict.py:615:8
+614             _list._check()
+615             assert len(self) == len(_list)
+616             assert all(key in self for key in _list)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sorteddict.py:616:8
+615             assert len(self) == len(_list)
+616             assert all(key in self for key in _list)
+617
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:162:8
+161             """
+162             assert key is None
+163             self._len = 0
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1619:12
+1618            try:
+1619                assert self._load >= 4
+1620                assert len(self._maxes) == len(self._lists)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1620:12
+1619                assert self._load >= 4
+1620                assert len(self._maxes) == len(self._lists)
+1621                assert self._len == sum(len(sublist) for sublist in self._lists)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1621:12
+1620                assert len(self._maxes) == len(self._lists)
+1621                assert self._len == sum(len(sublist) for sublist in self._lists)
+1622
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1627:20
+1626                    for pos in range(1, len(sublist)):
+1627                        assert sublist[pos - 1] <= sublist[pos]
+1628
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1632:16
+1631                for pos in range(1, len(self._lists)):
+1632                    assert self._lists[pos - 1][-1] <= self._lists[pos][0]
+1633
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1637:16
+1636                for pos in range(len(self._maxes)):
+1637                    assert self._maxes[pos] == self._lists[pos][-1]
+1638
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1642:12
+1641                double = self._load << 1
+1642                assert all(len(sublist) <= double for sublist in self._lists)
+1643
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1649:16
+1648                for pos in range(0, len(self._lists) - 1):
+1649                    assert len(self._lists[pos]) >= half
+1650
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1652:16
+1651                if self._index:
+1652                    assert self._len == self._index[0]
+1653                    assert len(self._index) == self._offset + len(self._lists)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1653:16
+1652                    assert self._len == self._index[0]
+1653                    assert len(self._index) == self._offset + len(self._lists)
+1654
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1659:20
+1658                        leaf = self._index[self._offset + pos]
+1659                        assert leaf == len(self._lists[pos])
+1660
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1666:24
+1665                        if child >= len(self._index):
+1666                            assert self._index[pos] == 0
+1667                        elif child + 1 == len(self._index):
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1668:24
+1667                        elif child + 1 == len(self._index):
+1668                            assert self._index[pos] == self._index[child]
+1669                        else:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:1671:24
+1670                            child_sum = self._index[child] + self._index[child + 1]
+1671                            assert child_sum == self._index[pos]
+1672            except:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2570:12
+2569            try:
+2570                assert self._load >= 4
+2571                assert len(self._maxes) == len(self._lists) == len(self._keys)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2571:12
+2570                assert self._load >= 4
+2571                assert len(self._maxes) == len(self._lists) == len(self._keys)
+2572                assert self._len == sum(len(sublist) for sublist in self._lists)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2572:12
+2571                assert len(self._maxes) == len(self._lists) == len(self._keys)
+2572                assert self._len == sum(len(sublist) for sublist in self._lists)
+2573
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2578:20
+2577                    for pos in range(1, len(sublist)):
+2578                        assert sublist[pos - 1] <= sublist[pos]
+2579
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2583:16
+2582                for pos in range(1, len(self._keys)):
+2583                    assert self._keys[pos - 1][-1] <= self._keys[pos][0]
+2584
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2588:16
+2587                for val_sublist, key_sublist in zip(self._lists, self._keys):
+2588                    assert len(val_sublist) == len(key_sublist)
+2589                    for val, key in zip(val_sublist, key_sublist):
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2590:20
+2589                    for val, key in zip(val_sublist, key_sublist):
+2590                        assert self._key(val) == key
+2591
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2595:16
+2594                for pos in range(len(self._maxes)):
+2595                    assert self._maxes[pos] == self._keys[pos][-1]
+2596
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2600:12
+2599                double = self._load << 1
+2600                assert all(len(sublist) <= double for sublist in self._lists)
+2601
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2607:16
+2606                for pos in range(0, len(self._lists) - 1):
+2607                    assert len(self._lists[pos]) >= half
+2608
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2610:16
+2609                if self._index:
+2610                    assert self._len == self._index[0]
+2611                    assert len(self._index) == self._offset + len(self._lists)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2611:16
+2610                    assert self._len == self._index[0]
+2611                    assert len(self._index) == self._offset + len(self._lists)
+2612
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2617:20
+2616                        leaf = self._index[self._offset + pos]
+2617                        assert leaf == len(self._lists[pos])
+2618
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2624:24
+2623                        if child >= len(self._index):
+2624                            assert self._index[pos] == 0
+2625                        elif child + 1 == len(self._index):
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2626:24
+2625                        elif child + 1 == len(self._index):
+2626                            assert self._index[pos] == self._index[child]
+2627                        else:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedlist.py:2629:24
+2628                            child_sum = self._index[child] + self._index[child + 1]
+2629                            assert child_sum == self._index[pos]
+2630            except:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedset.py:732:8
+731             _list._check()
+732             assert len(_set) == len(_list)
+733             assert all(value in _set for value in _list)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\sortedcontainers\sortedset.py:733:8
+732             assert len(_set) == len(_list)
+733             assert all(value in _set for value in _list)
+
+--------------------------------------------------
+>> Issue: [B108:hardcoded_tmp_directory] Probable insecure usage of temp file/directory.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-377 (https://cwe.mitre.org/data/definitions/377.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b108_hardcoded_tmp_directory.html
+   Location: .\venv\Lib\site-packages\stevedore\_cache.py:153:39
+152                     os.path.isfile(os.path.join(self._dir, '.disable')),
+153                     sys.executable[0:4] == '/tmp',  # noqa: S108,
+154                 ]
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\example\load_as_driver.py:42:4
+41          # okay because invoke_on_load is true
+42          assert isinstance(mgr.driver, FormatterBase)
+43          for chunk in mgr.driver.format(data):
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\example\load_as_extension.py:44:8
+43          ) -> tuple[str, Iterable[str]]:
+44              assert ext.obj is not None
+45              return (ext.name, ext.obj.format(data))
+
+--------------------------------------------------
+>> Issue: [B108:hardcoded_tmp_directory] Probable insecure usage of temp file/directory.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-377 (https://cwe.mitre.org/data/definitions/377.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b108_hardcoded_tmp_directory.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_cache.py:28:50
+27              """
+28              with mock.patch.object(sys, 'executable', '/tmp/fake'):
+29                  sot = _cache.Cache()
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_extension.py:86:12
+85              else:
+86                  assert False, 'Failed to raise KeyError'
+87
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_extension.py:141:12
+140             for e in em.extensions:
+141                 assert e.obj is not None
+142                 self.assertEqual(e.obj.args, ('a',))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_extension.py:198:12
+197                 em.map(mapped, 1, 2, a='A', b='B')
+198                 assert False
+199             except RuntimeError:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_hook.py:60:12
+59              else:
+60                  assert False, 'Failed to raise KeyError'
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\stevedore\tests\test_test_manager.py:154:8
+153             # This will raise KeyError if the names don't match
+154             assert em[test_extension.name]
+155
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\_collections.py:335:12
+334                 # key/value pair
+335                 assert len(vals) >= 2
+336                 if combine:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\http2\connection.py:261:8
+260
+261             assert status is not None
+262             return HTTP2Response(
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\urllib3\http2\connection.py:314:12
+313                         self.sock.sendall(data)
+314                 except Exception:
+315                     pass
+316
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\http2\probe.py:45:12
+44              except BaseException as e:  # Defensive:
+45                  assert not isinstance(e, KeyError)  # KeyError shouldn't be possible.
+46                  key_lock.release()
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\response.py:453:12
+452             if not buffer:
+453                 assert self._size == 0
+454                 return b""
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\response.py:993:8
+992             """
+993             assert self._fp
+994             c_int_max = 2**31 - 1
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\urllib3\util\connection.py:129:8
+128                 has_ipv6 = True
+129             except Exception:
+130                 pass
+131
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\urllib3\util\retry.py:337:29
+336             if self.backoff_jitter != 0.0:
+337                 backoff_value += random.random() * self.backoff_jitter
+338             return float(max(0, min(self.backoff_max, backoff_value)))
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\util\ssltransport.py:137:8
+136             reading = "r" in mode or not writing
+137             assert reading or writing
+138             binary = "b" in mode
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\urllib3\util\ssltransport.py:160:12
+159             else:
+160                 assert writing
+161                 buffer = io.BufferedWriter(raw, buffering)
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\_internal.py:39:4
+38          env = getattr(obj, "environ", obj)
+39          assert isinstance(env, dict), (
+40              f"{type(obj).__name__!r} is not a WSGI environment (has to be a dict)"
+41          )
+42          return env
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: .\venv\Lib\site-packages\werkzeug\_reloader.py:5:0
+4       import os
+5       import subprocess
+6       import sys
+
+--------------------------------------------------
+>> Issue: [B603:subprocess_without_shell_equals_true] subprocess call - check for execution of untrusted input.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html
+   Location: .\venv\Lib\site-packages\werkzeug\_reloader.py:275:24
+274                 new_environ["WERKZEUG_RUN_MAIN"] = "true"
+275                 exit_code = subprocess.call(args, env=new_environ, close_fds=False)
+276
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\datastructures\file_storage.py:142:8
+141                 self.stream.close()
+142             except Exception:
+143                 pass
+144
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\datastructures\range.py:178:8
+177             """Simple method to update the ranges."""
+178             assert http.is_byte_range_valid(start, stop, length), "Bad range provided"
+179             self._units: str | None = units
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:45:11
+44      def hash_pin(pin: str) -> str:
+45          return hashlib.sha1(f"{pin} added salt".encode("utf-8", "replace")).hexdigest()[:12]
+46
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:88:12
+87                  # https://github.com/pallets/werkzeug/issues/925
+88                  from subprocess import PIPE
+89                  from subprocess import Popen
+
+--------------------------------------------------
+>> Issue: [B404:blacklist] Consider possible security implications associated with the subprocess module.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:89:12
+88                  from subprocess import PIPE
+89                  from subprocess import Popen
+90
+
+--------------------------------------------------
+>> Issue: [B607:start_process_with_partial_path] Starting a process with a partial executable path
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:91:19
+90
+91                  dump = Popen(
+92                      ["ioreg", "-c", "IOPlatformExpertDevice", "-d", "2"], stdout=PIPE
+93                  ).communicate()[0]
+94                  match = re.search(b'"serial-number" = <([^>]+)', dump)
+
+--------------------------------------------------
+>> Issue: [B603:subprocess_without_shell_equals_true] subprocess call - check for execution of untrusted input.
+   Severity: Low   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:91:19
+90
+91                  dump = Popen(
+92                      ["ioreg", "-c", "IOPlatformExpertDevice", "-d", "2"], stdout=PIPE
+93                  ).communicate()[0]
+94                  match = re.search(b'"serial-number" = <([^>]+)', dump)
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\__init__.py:196:8
+195
+196         h = hashlib.sha1()
+197         for bit in chain(probably_public_bits, private_bits):
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b102_exec_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\console.py:177:12
+176             try:
+177                 exec(code, self.locals)
+178             except Exception:
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\debug\repr.py:260:16
+259                         items.append((key, self.repr(getattr(obj, key))))
+260                     except Exception:
+261                         pass
+262                 title = "Details for"
+
+--------------------------------------------------
+>> Issue: [B324:hashlib] Use of weak SHA1 hash for security. Consider usedforsecurity=False
+   Severity: High   Confidence: High
+   CWE: CWE-327 (https://cwe.mitre.org/data/definitions/327.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b324_hashlib.html
+   Location: .\venv\Lib\site-packages\werkzeug\http.py:1077:11
+1076        """
+1077        return sha1(data).hexdigest()
+1078
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\middleware\lint.py:223:12
+222                     )
+223                 except Exception:
+224                     pass
+225
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\routing\map.py:729:8
+728             """
+729             assert self.map.redirect_defaults
+730             for r in self.map._rules_by_endpoint[rule.endpoint]:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\routing\map.py:784:8
+783                 url += f"?{self.encode_query_args(query_args)}"
+784             assert url != path, "detected invalid alias setting. No canonical URL found"
+785             return url
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\routing\rules.py:700:8
+699             """Compiles the regular expression and stores it."""
+700             assert self.map is not None, "rule not bound"
+701
+
+--------------------------------------------------
+>> Issue: [B102:exec_used] Use of exec detected.
+   Severity: Medium   Confidence: High
+   CWE: CWE-78 (https://cwe.mitre.org/data/definitions/78.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b102_exec_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\routing\rules.py:736:8
+735             locs: dict[str, t.Any] = {}
+736             exec(code, globs, locs)
+737             return locs[name]  # type: ignore
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:265:12
+264                 nonlocal status_sent, headers_sent, chunk_response
+265                 assert status_set is not None, "write() before start_response"
+266                 assert headers_set is not None, "write() before start_response"
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:266:12
+265                 assert status_set is not None, "write() before start_response"
+266                 assert headers_set is not None, "write() before start_response"
+267                 if status_sent is None:
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:306:12
+305
+306                 assert isinstance(data, bytes), "applications must write bytes"
+307
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:391:12
+390                     execute(InternalServerError())
+391                 except Exception:
+392                     pass
+393
+
+--------------------------------------------------
+>> Issue: [B104:hardcoded_bind_all_interfaces] Possible binding to all interfaces.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-605 (https://cwe.mitre.org/data/definitions/605.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b104_hardcoded_bind_all_interfaces.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:852:29
+851
+852                 if self.host in {"0.0.0.0", "::"}:
+853                     messages.append(f" * Running on all addresses ({self.host})")
+
+--------------------------------------------------
+>> Issue: [B104:hardcoded_bind_all_interfaces] Possible binding to all interfaces.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-605 (https://cwe.mitre.org/data/definitions/605.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b104_hardcoded_bind_all_interfaces.html
+   Location: .\venv\Lib\site-packages\werkzeug\serving.py:855:32
+854
+855                     if self.host == "0.0.0.0":
+856                         localhost = "127.0.0.1"
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: .\venv\Lib\site-packages\werkzeug\test.py:70:62
+69          if boundary is None:
+70              boundary = f"---------------WerkzeugFormPart_{time()}{random()}"
+71
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\test.py:650:8
+649                 self.close()
+650             except Exception:
+651                 pass
+652
+
+--------------------------------------------------
+>> Issue: [B110:try_except_pass] Try, Except, Pass detected.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b110_try_except_pass.html
+   Location: .\venv\Lib\site-packages\werkzeug\test.py:667:12
+666                     f.close()
+667                 except Exception:
+668                     pass
+669             self.closed = True
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\yaml\parser.py:185:12
+184                 event = StreamEndEvent(token.start_mark, token.end_mark)
+185                 assert not self.states
+186                 assert not self.marks
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: .\venv\Lib\site-packages\yaml\parser.py:186:12
+185                 assert not self.states
+186                 assert not self.marks
+187                 self.state = None
+
+--------------------------------------------------
+
+Code scanned:
+        Total lines of code: 477318
+        Total lines skipped (#nosec): 6
+        Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 21
+
+Run metrics:
+        Total issues (by severity):
+                Undefined: 0
+                Low: 1369
+                Medium: 67
+                High: 31
+        Total issues (by confidence):
+                Undefined: 0
+                Low: 2
+                Medium: 46
+                High: 1419
+Files skipped (0):
