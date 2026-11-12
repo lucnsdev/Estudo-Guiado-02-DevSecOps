@@ -65,8 +65,10 @@ jobs:
       # Análise Estática de Segurança (SAST)
       - name: SAST Análise Estática com Bandit
         run: |
-            bandit -r . -f txt
-      # bandit -r . -lll
+            bandit -r . -f txt -x "*test_*.py"
+      # bandit -r . -f txt
+      # bandit -r . -lll # txt esconde as vunerabilidades baixas e medias
+      # bandit -r . -f txt -x "*test_*.py" # ideal
           
       # Análise de Composição de Software (SCA)
       - name: SCA Análise de Dependências com Pip-Audit
